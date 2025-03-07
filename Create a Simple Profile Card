@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .card {
+        background: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+      .designation {
+        color: gray;
+      }
+
+      .bio {
+        margin: 10px 0;
+        font-size: 14px;
+      }
+
+      .social-icons a {
+        margin: 5px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile Picture" />
+      <div class="name">Rahul Chougule</div>
+      <div class="designation">Web Developer</div>
+      <p class="bio">Passionate about creating amazing web experiences.</p>
+      <div class="social-icons">
+        <a href="#">🔵</a>
+        <a href="#">🐦</a>
+        <a href="#">📷</a>
+      </div>
+    </div>
+  </body>
+</html>
